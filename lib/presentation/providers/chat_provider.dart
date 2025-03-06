@@ -14,6 +14,7 @@ class ChatProvider extends ChangeNotifier {
 
   Future<void> herReply() async {
     final herMessage = await getYesNotAnswer.getAnwer();
+    messageList.add(herMessage);
   }
 
   Future<void> sendMessage(String text) async {
